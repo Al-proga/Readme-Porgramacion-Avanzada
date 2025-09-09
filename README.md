@@ -7,25 +7,27 @@
 
   <h3><strong> Archivos pre-requisitos</strong> </h3>
   <p> Debes de tener algunos archivos previos de compilar el codigo de tal manera que tengas la siguiente estructura de archivos: <br>
-  <pre>
-  Taller-2/
-  ├── libs/
-      ├── archivoPacientes.hh
-      ├── configuracion.hh
-      ├── lecturaSensor.hh
-      ├── maquinaUCI.hh
-      ├── medicionPaciente.hh
-      ├── paciente.hh
-      ├── salaUCI.hh
-  ├── output/
-    ├── data/
-      ├── menu.cpp
-      ├── anomalias.txt
-      ├── configuracion.csv
-      ├── datos.bsf
-      ├── pacientes.csv
-      └── Binario.exe <- Archivo generado al compilar
-  </pre>
+  <ol>
+    <pre>
+    Taller-2/
+        ├── libs/
+            ├── archivoPacientes.hh
+            ├── configuracion.hh
+            ├── lecturaSensor.hh
+            ├── maquinaUCI.hh
+            ├── medicionPaciente.hh
+            ├── paciente.hh
+            ├── salaUCI.hh
+        ├── output/
+          ├── data/
+            ├── menu.cpp
+            ├── anomalias.txt
+            ├── configuracion.csv
+            ├── datos.bsf
+            ├── pacientes.csv
+            └── Binario.exe <- Archivo generado al compilar
+    </pre>
+  </ol>
   </p>
         
   <h3><strong> Compilación y ejecución </strong></h3>
@@ -33,14 +35,16 @@
   
   <h4><em> Menú Principal </em></h4>
   <p> En el menu encontraras:</p>
-  <p>
-  1. Cargar TODOS los archivos de datos (.csv y .bsf)<br>
-  2. Leer archivo .bsf<br>
-  3. Generar reporte global de anomalias (anomalias.txt)<br>
-  4. Generar reporte de un paciente<br>
-  5. Exportar pacientes con ECG anomalo<br>
-  0. Salir<br>
-  </p>
+  <ol>
+    <p>
+    1. Cargar TODOS los archivos de datos (.csv y .bsf)<br>
+    2. Leer archivo .bsf<br>
+    3. Generar reporte global de anomalias (anomalias.txt)<br>
+    4. Generar reporte de un paciente<br>
+    5. Exportar pacientes con ECG anomalo<br>
+    0. Salir<br>
+    </p>
+  </ol>
 
   <h4><em> ¿Qué debes hacer? </em></h4>
   <p> Solo sigue las siguientes instrucciones y tendrás el sistema biomedico funcionando.</p>
