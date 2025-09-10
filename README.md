@@ -36,12 +36,11 @@
   <p> En el menu encontraras:</p>
   <ol>
     <p>
-    1. Cargar TODOS los archivos de datos (.csv y .bsf)<br>
-    2. Leer archivo .bsf<br>
-    3. Generar reporte global de anomalias (anomalias.txt)<br>
-    4. Generar reporte de un paciente<br>
-    5. Exportar pacientes con ECG anomalo<br>
-    0. Salir<br>
+    1. Cargar TODOS los archivos de datos (.csv y .bsf) y lee el archivo.<br>
+    2. Generar reporte global de anomalias (anomalias.txt).<br>
+    3. Generar reporte de un paciente.<br>
+    4. Exportar pacientes con ECG anomalo.<br>
+    0. Salir.<br>
     </p>
   </ol>
 
