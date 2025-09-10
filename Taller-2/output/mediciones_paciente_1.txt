@@ -1,0 +1,22 @@
+--- Reporte de Mediciones para Paciente ---
+ID: 1
+Nombre: Teresa Alvarez
+
+--- Sensor: T ---
+25/06/2025 01:00:00.000 - Valor: 37.5
+25/06/2025 01:15:00.000 - Valor: 39.2 (ANOMALIA)
+Estadisticas -> Min: 37.5, Max: 39.2, Promedio: 38.35
+
+--- Sensor: O ---
+25/06/2025 01:00:00.000 - Valor: 98
+25/06/2025 01:15:00.000 - Valor: 92.5 (ANOMALIA)
+Estadisticas -> Min: 92.5, Max: 98, Promedio: 95.25
+
+--- Sensor: P ---
+25/06/2025 01:00:00.000 - Valor: 120/80
+Estadisticas -> Min: 120, Max: 120, Promedio: 120
+
+--- Sensor: E ---
+25/06/2025 01:00:00.000 - Valor: 3
+>>> VEREDICTO: ANOMALIA DE AMPLITUD DETECTADA EN ECG.
+Estadisticas -> Min: 3, Max: 3, Promedio: 3

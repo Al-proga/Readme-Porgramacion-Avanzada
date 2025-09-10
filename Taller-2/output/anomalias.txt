@@ -1,0 +1,26 @@
+--- Reporte Global de Anomalias ---
+
+=== ANOMALIAS PUNTUALES (T, O, P, etc.) ===
+
+Fecha: 25/06/2025 01:12:20.080
+  Paciente: Alberto Torres (ID: 2)
+  Sensor: T | Valor: 39
+
+Fecha: 25/06/2025 01:12:20.080
+  Paciente: Alberto Torres (ID: 2)
+  Sensor: P | Valor: 150/100
+
+Fecha: 25/06/2025 01:15:00.000
+  Paciente: Teresa Alvarez (ID: 1)
+  Sensor: T | Valor: 39.2
+
+Fecha: 25/06/2025 01:15:00.000
+  Paciente: Teresa Alvarez (ID: 1)
+  Sensor: O | Valor: 92.5
+
+
+=== ANOMALIAS DE CONJUNTO (ECG) ===
+
+Paciente: Teresa Alvarez (ID: 1)
+  - Veredicto: ANOMALIA DE AMPLITUD DETECTADA EN ECG.
+  - Min/Max Registrado: 3 / 3

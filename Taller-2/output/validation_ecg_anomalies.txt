@@ -1,0 +1,17 @@
+=== VALIDACION DEL ARCHIVO DE ANOMALIAS ECG ===
+Archivo fuente: pacientes_ecg_anomalos.dat
+================================================
+
+PACIENTE #1
+  ID del Paciente: 2
+  ID de la Maquina: 102
+  Numero de Mediciones ECG: 1
+  Mediciones ECG:
+    Medicion 1:
+      Fecha y Hora: 22/10/2023 09:00:00.000
+      Valor de Medida: 1.150000
+
+=== RESUMEN DE VALIDACION ===
+Total de pacientes con anomalias ECG: 1
+Total de mediciones ECG: 1
+Validacion completada exitosamente.
