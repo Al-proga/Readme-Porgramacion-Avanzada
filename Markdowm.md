@@ -182,6 +182,30 @@ Pontificia Universidad Javeriana</p>
     <h4>¿Para qué?</h4>
     <p>Para que el archivo <code>UCI</code> se reestructure según salas, máquinas, mediciones y las lecturas de los sensores.</p>
   </li>
+
+  <li>
+    <b>void liberarMemoriaUCI(Sala* salas, int numSalas)</b> – Libera de forma segura toda la memoria dinámica que fue asignada por <code>cargarArchivoBSF</code>.
+    <h4>¿Cómo funciona?</h4>
+    <ol>
+      <li>Recibe <code>cargarArchivosBSF</code> y <code>numSalas</code></li>
+      <li>Recorre cada nivel y libera memoria con <code>delete[]</code>.</li>
+    </ol>
+    <h4>¿Para qué?</h4>
+    <p>Sirve para cerrar el programa limpiamente después de procesar los datos y previene fugas de memoria o memoria de relleno.</p>
+  </li>
+
+  <li>
+    <b>generarReporteAnomaliasGlobal(const Sala* salas, int numSalas, const ArchivoConfiguracion& config, const ArchivoPacientes& dbPacientes)</b> – Hace un reporte individual de los pacientes con anomalías.
+    <h4>¿Cómo funciona?</h4>
+    <ol>
+      <li>Recibe la información de los pacientes anómalos.</li>
+      <li>Busca todas las mediciones del paciente.</li>
+      <li>Recopila la informacón y las ordena por fecha.</li>
+      <li>Genera un archivo <code>anomalias.txt</code> con las lecturas anómalas excepto ECG.</li>
+    </ol>
+    <h4>¿Para qué?</h4>
+    <p>Genera un reporte individual para cada paciente con mediciones fuera de la configuración.</p>
+  </li>
 </ol>
 
 <hr>
