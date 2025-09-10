@@ -14,7 +14,7 @@ void escribirStringFijo(fstream& archivo, const char* texto, int tamano) {
 int GenerateBinaryFile(const char* text_file_name, const char* binary_file_name);
 
 int main() {
-    GenerateBinaryFile("patient_readings_simulation_tiny.txt", "datos.bsf");
+    GenerateBinaryFile("patient_readings_simulation_tiny.bsf", "datos.bsf");
     return 0;
 }
 
@@ -89,4 +89,5 @@ int GenerateBinaryFile(const char* text_file_name, const char* binary_file_name)
     binary_file.close();
     cout << "Archivo '" << binary_file_name << "' generado correctamente." << endl;
     return 0;
+
 }
