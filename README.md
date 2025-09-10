@@ -49,23 +49,21 @@
   <p> Lee las opciones y digita solo el número de la opción, por el orden a continuación.</p>
    <ol>
     <li><strong>Opción 1: Cargar archivos</strong><br>
-      Carga todos los archivos necesarios para inicializar la base de datos y estructuras internas.
+      Carga todos los archivos necesarios para inicializar la base de datos y estructuras internas. Además, procesa las lecturas biomédicas.
     </li>
-     <li><strong>Opción 2: Leer archivo binario</strong><br></li>
-       Procesa las lecturas biomédicas.
-     <li><strong>Opción 3: Generar reporte global de anomalías</strong><br>
+     <li><strong>Opción 2: Generar reporte global de anomalías</strong><br>
       Crea <code>anomalias.txt</code> con todas las lecturas anómalas (excepto ECG), agrupadas por paciente y por orden cronologico.
     </li>
-    <li><strong>Opción 4: Generar reporte de un paciente</strong><br>
+    <li><strong>Opción 3: Generar reporte de un paciente</strong><br>
       Solicita el ID del paciente y genera <code>mediciones_paciente_&lt;ID&gt;.txt</code> con sus lecturas ordenadas y clasificadas. (Debes de saber el paciente al cual quieras generar un reporte)
     </li>
-    <li><strong>Opción 5: Exportar pacientes con ECG anómalo</strong><br>
+    <li><strong>Opción 4: Exportar pacientes con ECG anómalo</strong><br>
       Detecta pacientes con lecturas ECG fuera de los rangos normales y los exporta a <code>pacientes_ecg_anomalos.dat</code>.
     </li>
   </ol>
   <p> Si quieres volver a repetir una acción vuelve a digitar el número de la opción.</p>
 
-  <h2><em>Salida</em></h2>
+  <h2><em>Opción 0:  Salida</em></h2>
   <p><strong>Opción 0: Salir</strong><br>
   Finaliza la ejecución del programa.</p>
 
