@@ -59,7 +59,6 @@ Pontificia Universidad Javeriana</p>
 
   <li>
     <b>char** separarLinea(char* linea, int& numTokens, char delimitador)</b> – Separa una línea de texto en múltiples tokens según un delimitador.
-    <h3><strong>Usamos chatGPT</strong></h3>
     <h4>¿Cómo funciona?</h4>
     <ol>
       <li>Recibe una cadena de caracteres y un carácter delimitador.</li>
@@ -85,7 +84,6 @@ Pontificia Universidad Javeriana</p>
 
   <li>
     <b>Paciente crearPacienteDesdeTokens(char** tokens)</b> – Crea un <code>Paciente</code> a partir de los tokens obtenidos en <code>separarLinea</code>.
-    <h3><strong>Usamos chatGPT</strong></h3>
     <h4>¿Cómo funciona?</h4>
     <ol>
       <li>Convierte el primer token en entero (<code>ID</code>).</li>
@@ -161,7 +159,6 @@ Pontificia Universidad Javeriana</p>
 
   <li>
     <b>generarReportePaciente(int idPaciente, const ArchivoPacientes& dbPacientes, const ArchivoConfiguracion& config)</b> – Genera un archivo <code>anomalias.txt</code> con todas las anomalías de todos los pacientes.
-    h3><strong>Usamos chatGPT</strong></h3>
     <h4>¿Cómo funciona?</h4>
     <ol>
       <li>Recorre todas las lecturas.</li>
