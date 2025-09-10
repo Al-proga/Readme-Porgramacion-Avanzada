@@ -195,7 +195,20 @@ Pontificia Universidad Javeriana</p>
   </li>
 
   <li>
-    <b>generarReporteAnomaliasGlobal(const Sala* salas, int numSalas, const ArchivoConfiguracion& config, const ArchivoPacientes& dbPacientes)</b> – Hace un reporte individual de los pacientes con anomalías.
+    <b>generarReportePaciente(int idPaciente, const ArchivoPacientes& dbPacientes, const Sala* salas, int numSalas, const ArchivoConfiguracion& config))</b> – Crea un reporte detallado de solo un paciente.
+    <h4>¿Cómo funciona?</h4>
+    <ol>
+      <li>Recibe el ID del paciente que se quiere hacer un reporte ingresado por el usuario.</li>
+      <li>Busca todas las mediciones del paciente en <code>dbPacientes</code>.</li>
+      <li>Genera un archivo individual <code>.txt</code>.</li>
+      <li>Para ECG, analiza si la amplitud total (máx – mín) supera los valores permitidos.</li>
+    </ol>
+    <h4>¿Para qué?</h4>
+    <p>Genera un reporte individual para cada paciente con mediciones fuera de la configuración.</p>
+  </li>
+
+  <li>
+    <b>generarReporteAnomaliasGlobal(const Sala* salas, int numSalas, const ArchivoConfiguracion& config, const ArchivoPacientes& dbPacientes)</b> – Crea el reporte de texto <code>anomalias.txt</code>. 
     <h4>¿Cómo funciona?</h4>
     <ol>
       <li>Recibe la información de los pacientes anómalos.</li>
@@ -204,7 +217,19 @@ Pontificia Universidad Javeriana</p>
       <li>Genera un archivo <code>anomalias.txt</code> con las lecturas anómalas excepto ECG.</li>
     </ol>
     <h4>¿Para qué?</h4>
-    <p>Genera un reporte individual para cada paciente con mediciones fuera de la configuración.</p>
+    <p>Genera un reporte global de anomalias para cada paciente con mediciones fuera de la configuración en la UCI.</p>
+  </li>
+
+  <li>
+    <b>exportarPacientesECGAnomalo(const ArchivoPacientes& dbPacientes, const Sala* salas, int numSalas, const ArchivoConfiguracion& config)</b> – Crea el archivo binario <code>pacientes_ecg_anomalos.dat</code>.
+    <h4>¿Cómo funciona?</h4>
+    <ol>
+      <li>Recibe la lista de pacientes <code>dbPacientes</code>, <code>salas</code>, <code>numSalas</code> y limites normales del ECG <code>config</code>.</li>
+      <li>Busca pacientes con ECG anómalo (comparando amplitud).</li>
+      <li>Exporta sus datos a un archivo binario <code>pacientes_ecg_anomalos.dat</code>.</li>
+    </ol>
+    <h4>¿Para qué?</h4>
+    <p>Funciona como filtro de toda la UCI, porque saca solo a los pacientes con ECG anómalo.</p>
   </li>
 </ol>
 
