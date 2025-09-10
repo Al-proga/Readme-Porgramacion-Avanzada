@@ -19,7 +19,6 @@
             ├── paciente.hh
             ├── salaUCI.hh
         ├── output/
-          ├── data/
             ├── menu.cpp
             ├── anomalias.txt
             ├── configuracion.csv
